@@ -20,12 +20,24 @@ header{
     height: 12.5%;
     display: flex;
 }
-.nomeheader{
-    margin-left: 5%;
-    -border: 1px red solid;
-    font-size: 2vw;
+.nome{
     margin-top: 0.3%;
-    padding-top: 1.4%;
+    margin-left: 5%;
+    font-size: 1em;
+}
+@media(max-width: 500px){
+    .nome{
+        font-size: 50%;
+    }
+    .a-menu{
+        font-size: 0.2em;
+    }
+    #menu{
+        margin-right: 25%;
+    }
+    .search-bar{
+        visibility: hidden;
+    }
 }
 .menu{
     padding: 0;
@@ -46,7 +58,7 @@ header{
     transition: 0.5s;
 }
 .a-menu{
-    font-size: 1vw;
+    0font-size: 1em;
     color: white;
     transition: 0.5s;
 }
